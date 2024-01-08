@@ -2,7 +2,7 @@ import './App.css';
 import io from 'socket.io-client'
 import Notification from './firebaseNotification/Notification';
 import {useEffect, useState} from "react"
-const socket = io.connect("http://localhost:3001");
+const socket = io.connect("https://socket-server-saqc.onrender.com");
 
 function App() {
   const [headColor , setHeadColor] = useState("red")
